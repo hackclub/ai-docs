@@ -20,7 +20,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Guide', link: '/' },
-      { text: 'API Reference', link: '/api/chat-completions' }
+      { text: 'API Reference', link: '/api/chat-completions' },
+      { text: 'Models', link: '/models-list' }
     ],
 
     sidebar: [
