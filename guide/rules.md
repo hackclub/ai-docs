@@ -19,6 +19,6 @@ Rate limits are applied per user:
 | Endpoint | Limit |
 |----------|-------|
 | Chat completions & Embeddings | 150 requests per 30 minutes |
-| Moderations | 300 requests per minute |
+| Moderations | 300 requests per 30 minutes |
 
 When you exceed a rate limit, the API will return a `429 Too Many Requests` response. Wait for the rate limit window to reset before making additional requests.
