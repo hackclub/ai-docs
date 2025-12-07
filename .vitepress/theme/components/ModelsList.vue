@@ -26,12 +26,8 @@ async function fetchModels() {
     const langData = await langRes.json()
     const embData = await embRes.json()
 
-    languageModels.value = (langData.data || []).sort((a: Model, b: Model) => 
-      a.id.localeCompare(b.id)
-    )
-    embeddingModels.value = (embData.data || []).sort((a: Model, b: Model) => 
-      a.id.localeCompare(b.id)
-    )
+    languageModels.value = langData.data || []
+    embeddingModels.value = embData.data || []
   } catch (e) {
     error.value = e instanceof Error ? e.message : 'Failed to load models'
   } finally {
@@ -59,7 +55,6 @@ onMounted(fetchModels)
     <div v-else-if="error" class="error">{{ error }}</div>
     <template v-else>
       <h2 id="language-models">Language Models</h2>
-      <p>{{ languageModels.length }} models available</p>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -80,7 +75,6 @@ onMounted(fetchModels)
       </div>
 
       <h2 id="embedding-models">Embedding Models</h2>
-      <p>{{ embeddingModels.length }} models available</p>
       <div class="table-wrapper">
         <table>
           <thead>
