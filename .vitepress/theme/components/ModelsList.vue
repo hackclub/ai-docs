@@ -46,6 +46,16 @@ function getDisplayName(model: Model): string {
   return model.name || model.id.split('/').pop() || model.id
 }
 
+const copiedId = ref<string | null>(null)
+
+async function copyModelId(id: string) {
+  await navigator.clipboard.writeText(id)
+  copiedId.value = id
+  setTimeout(() => {
+    if (copiedId.value === id) copiedId.value = null
+  }, 2000)
+}
+
 onMounted(fetchModels)
 </script>
 
@@ -67,7 +77,12 @@ onMounted(fetchModels)
           <tbody>
             <tr v-for="model in languageModels" :key="model.id">
               <td>{{ getDisplayName(model) }}</td>
-              <td><code>{{ model.id }}</code></td>
+              <td>
+                <code class="copyable" @click="copyModelId(model.id)" :title="copiedId === model.id ? 'Copied!' : 'Click to copy'">
+                  {{ model.id }}
+                  <span class="copy-icon">{{ copiedId === model.id ? '✓' : '⧉' }}</span>
+                </code>
+              </td>
               <td>{{ formatContextLength(model.context_length) }}</td>
             </tr>
           </tbody>
@@ -87,7 +102,12 @@ onMounted(fetchModels)
           <tbody>
             <tr v-for="model in embeddingModels" :key="model.id">
               <td>{{ getDisplayName(model) }}</td>
-              <td><code>{{ model.id }}</code></td>
+              <td>
+                <code class="copyable" @click="copyModelId(model.id)" :title="copiedId === model.id ? 'Copied!' : 'Click to copy'">
+                  {{ model.id }}
+                  <span class="copy-icon">{{ copiedId === model.id ? '✓' : '⧉' }}</span>
+                </code>
+              </td>
               <td>{{ formatContextLength(model.context_length) }}</td>
             </tr>
           </tbody>
@@ -138,6 +158,25 @@ td code {
   padding: 0.125rem 0.375rem;
   background: var(--vp-c-bg-soft);
   border-radius: 4px;
+}
+
+td code.copyable {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+td code.copyable:hover {
+  background: var(--vp-c-bg-alt);
+}
+
+.copy-icon {
+  margin-left: 0.5rem;
+  opacity: 0.5;
+  font-size: 0.75rem;
+}
+
+td code.copyable:hover .copy-icon {
+  opacity: 1;
 }
 
 tr:hover {
