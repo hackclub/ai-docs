@@ -30,6 +30,7 @@ export default defineConfig({
           { text: 'Quick Start', link: '/' },
           { text: 'Authentication', link: '/guide/authentication' },
           { text: 'Using with Vercel\'s AI SDK', link: '/guide/using-with-vercel-ai-sdk' },
+          { text: 'Web Search for AI', link: '/guide/web-search' },
           { text: 'Rules & Rate Limiting', link: '/guide/rules' }
         ]
       },
