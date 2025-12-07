@@ -15,6 +15,7 @@ Authorization: Bearer YOUR_API_KEY
 - Create and manage keys from your [dashboard](https://ai.hackclub.com/dashboard) - give each key a descriptive name for easy identification (e.g. `CraftAI`)
 - You can have up to **50 active API keys.**
 - Never share your API keys or commit them to version control. It's your job to look after them!
+- Never use your API keys in client-side code - attackers can steal them and use them to make requests on your behalf.
 
 ## Example Request
 
