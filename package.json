@@ -7,5 +7,8 @@
   "dependencies": {
     "@catppuccin/vitepress": "^0.1.2",
     "vitepress-plugin-llms": "^1.9.3"
+  },
+  "devDependencies": {
+    "vitepress": "^2.0.0-alpha.15"
   }
 }
