@@ -39,6 +39,7 @@ export default defineConfig({
         text: 'API Reference',
         items: [
           { text: 'Chat Completions', link: '/api/chat-completions' },
+          { text: 'Responses API', link: '/api/responses' },
           { text: 'Image Generation', link: '/api/image-generation' },
           { text: 'PDF Inputs', link: '/api/pdf-inputs' },
           { text: 'Embeddings', link: '/api/embeddings' },
