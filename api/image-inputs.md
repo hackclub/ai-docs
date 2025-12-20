@@ -6,15 +6,10 @@ description: "Send images to vision-capable models for analysis and understandin
 
 Send images to vision-capable models for analysis and understanding.
 
-## Supported Models
-
-- `google/gemini-3-pro-image-preview` - High quality vision model
-- `google/gemini-2.5-flash-image-preview` - Faster vision model
-
 ## Supported Formats
 
-- **URL**: Send publicly accessible images directly
-- **Base64**: Required for local files or private images
+- **URL**: Send publicly accessible images directly - use this if possible!
+- **Base64**: Required for local files or private images.
 
 ## Example: Image via URL
 
@@ -25,7 +20,7 @@ curl https://ai.hackclub.com/proxy/v1/chat/completions \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "google/gemini-3-pro-image-preview",
+    "model": "google/gemini-2.5-flash",
     "messages": [
       {
         "role": "user",
@@ -51,7 +46,7 @@ const response = await fetch('https://ai.hackclub.com/proxy/v1/chat/completions'
     'Content-Type': 'application/json',
   },
   body: JSON.stringify({
-    model: 'google/gemini-3-pro-image-preview',
+    model: 'google/gemini-2.5-flash',
     messages: [
       {
         role: 'user',
@@ -86,7 +81,7 @@ response = requests.post(
         "Content-Type": "application/json"
     },
     json={
-        "model": "google/gemini-3-pro-image-preview",
+        "model": "google/gemini-2.5-flash",
         "messages": [{
             "role": "user",
             "content": [
@@ -124,7 +119,7 @@ const response = await fetch('https://ai.hackclub.com/proxy/v1/chat/completions'
     'Content-Type': 'application/json',
   },
   body: JSON.stringify({
-    model: 'google/gemini-3-pro-image-preview',
+    model: 'google/gemini-2.5-flash',
     messages: [
       {
         role: 'user',
@@ -166,7 +161,7 @@ response = requests.post(
         "Content-Type": "application/json"
     },
     json={
-        "model": "google/gemini-3-pro-image-preview",
+        "model": "google/gemini-2.5-flash",
         "messages": [{
             "role": "user",
             "content": [
@@ -194,7 +189,7 @@ print(result["choices"][0]["message"]["content"])
 {
   "id": "chatcmpl-123",
   "object": "chat.completion",
-  "model": "google/gemini-3-pro-image-preview",
+  "model": "google/gemini-2.5-flash",
   "choices": [
     {
       "index": 0,
