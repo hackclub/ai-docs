@@ -15,7 +15,7 @@ GET /up
 ### Example Request
 
 ```bash
-curl https://ai.hackclub.com/proxy/v1/models
+curl https://ai.hackclub.com/up
 ```
 
 ### Response Format
