@@ -31,7 +31,7 @@ import { OpenRouter } from "@openrouter/sdk";
 
 const client = new OpenRouter({
   apiKey: "YOUR_API_KEY",
-  baseURL: "https://ai.hackclub.com/proxy/v1",
+  serverURL: "https://ai.hackclub.com/proxy/v1",
 });
 
 const response = await client.chat.send({
