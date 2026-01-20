@@ -4,7 +4,7 @@ description: "Check if Hack Club AI is working and ready to serve requests."
 
 # Healthcheck
 
-Generate images using AI models via the chat completions endpoint.
+Check if Hack Club AI is working and ready to serve requests.
 
 ## Endpoint
 
