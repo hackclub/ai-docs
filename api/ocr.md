@@ -61,6 +61,10 @@ POST /proxy/v1/ocr
 }
 ```
 
+::: tip
+To process local files, first upload them to a publicly accessible URL (e.g., cloud storage) and use `document_url` or `image_url`.
+:::
+
 ## Response Formats
 
 Use these for `document_annotation_format` or `bbox_annotation_format`:
