@@ -35,6 +35,7 @@ export default defineConfig({
             link: "/guide/using-with-vercel-ai-sdk",
           },
           { text: "Web Search for AI", link: "/guide/web-search" },
+          { text: "Using Replicate Models", link: "/guide/replicate" },
           { text: "Rules & Rate Limiting", link: "/guide/rules" },
         ],
       },
