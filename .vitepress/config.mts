@@ -51,6 +51,7 @@ export default defineConfig({
           { text: "Get Models", link: "/api/get-models" },
           { text: "Token Stats", link: "/api/stats" },
           { text: "Moderations", link: "/api/moderations" },
+          { text: "OCR", link: "/api/ocr" },
           { text: "Healthcheck", link: "/api/healthcheck" },
         ],
       },
