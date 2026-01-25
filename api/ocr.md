@@ -4,10 +4,6 @@ description: "Extract text and structured content from images and PDF documents 
 
 # OCR (Optical Character Recognition)
 
-::: warning Closed Beta
-This feature is currently in **closed beta**. Access is limited to approved users only. Contact support if you'd like to request access.
-:::
-
 Extract text and structured content from images and PDF documents. Powered by Mistral OCR, this endpoint can understand complex document elements including tables, mathematical expressions, and multi-column layouts.
 
 ## Endpoint
