@@ -10,7 +10,9 @@
 
 4. **No resale.** You are not allowed to resell this service or use it to create a service that resells AI to others.
 
-5. **Follow the Code of Conduct.** You are not allowed to use this service to create tools that intentionally violate the [Code of Conduct](https://hackclub.com/conduct). Don't try to generate explicit imagery or text, malware, or other harmful content.
+5. Don't use this service with OpenClaw. It's insecure and there's a risk that your HCAI keys and/or personal information can get leaked. For the time being, you can still use HCAI with alternatives such as NanoClaw, as long as the usage of AI is reasonable (Up to ~50% of your usage can be used for tools like NanoClaw.) 
+
+6. **Follow the Code of Conduct.** You are not allowed to use this service to create tools that intentionally violate the [Code of Conduct](https://hackclub.com/conduct). Don't try to generate explicit imagery or text, malware, or other harmful content.
 
 ## Rate Limiting
 
