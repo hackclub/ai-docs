@@ -6,9 +6,6 @@ description: Learn how to use Replicate models with the Hack Club AI API.
 
 The Hack Club AI API allows you to easily integrate and use models hosted on [Replicate](https://replicate.com/). This guide will walk you through the steps to get started with Replicate models using the Hack Club AI API.
 
-> [!NOTE]
-> Replicate support is currently in **closed beta**. If you're interested in using Replicate models, reach out at [hey@mahadk.com](mailto:hey@mahadk.com)
-
 ## Finding Replicate Models
 
 Take a look at [HCAI's model directory](https://ai.hackclub.com/replicate) to find models that suit your needs. Each model page contains important information such as input parameters, output format, and example usage.
