@@ -52,6 +52,7 @@ export default defineConfig({
           { text: "Token Stats", link: "/api/stats" },
           { text: "Moderations", link: "/api/moderations" },
           { text: "OCR", link: "/api/ocr" },
+          { text: "Exa", link: "/api/exa" },
           { text: "Healthcheck", link: "/api/healthcheck" },
         ],
       },
