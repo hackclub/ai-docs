@@ -5,10 +5,7 @@ description: "Search the web, find similar pages, extract content and answer que
 # Exa
 
 Use Exa through the Hack Club AI proxy to search the web, find similar pages, extract content from URLs and answer questions with live web context.
-
-::: warning Closed beta
-Exa access currently requires the `enable_exa` feature flag. DM @mahad on Slack if you need access.
-:::
+Exa Search is enabled for all users of Hack Club AI.
 
 ## Endpoints
 
